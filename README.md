@@ -1,7 +1,8 @@
 # DESKTOP
 
-This is my desktop setup. It is just a modified DWM. I have included some resource files for colors,
-as well as my vimrc (because I always lose my vimrc)
+This is my desktop setup. It is just a modified DWM with conky.
+I run [paperview](https://github.com/glouw/paperview) to animated my wallpaper.
 
+I have included my .vimrc for safe keeping because I always lose it.
 
 ![](screenshot.png)
