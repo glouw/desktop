@@ -6,8 +6,6 @@ URxvt.font: xft:xos4 Terminus:size=10
 *background: #151515
 
 !black
-! *color0:     #AF875F
-! *color8:     #AF875F
 *color0:     #101010
 *color8:     #404040
 !red
