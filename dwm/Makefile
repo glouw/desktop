@@ -12,7 +12,7 @@ BIN = dwm
 
 CC = gcc
 
-$(BIN): $(SRC) Makefile
+$(BIN): $(SRC) *.h Makefile
 	$(CC) $(SRC) $(CFLAGS) $(INCLUDE) $(DEFS) $(LDFLAGS) -o $(BIN)
 
 clean:
