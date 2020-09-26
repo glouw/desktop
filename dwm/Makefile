@@ -6,13 +6,13 @@ DEFS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=200809L -DVERSION=\"6.2
 
 LDFLAGS = -lX11 -lXinerama -lfontconfig -lXft
 
-CFLAGS = -O2
+CFLAGS = -Ofast -march=native -funroll-loops -flto
 
 BIN = dwm
 
 CC = gcc
 
-$(BIN): $(SRC)
+$(BIN): $(SRC) Makefile
 	$(CC) $(SRC) $(CFLAGS) $(INCLUDE) $(DEFS) $(LDFLAGS) -o $(BIN)
 
 clean:
