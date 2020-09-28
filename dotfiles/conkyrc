@@ -4,9 +4,16 @@ conky.config = {
     background = false,
     update_interval = 0.9,
     total_run_times = 0,
-    use_spacer = 'none',
+    use_spacer = 'left',
+    pad_percents = 2,
 };
 
 conky.text = [[
-    CPU [${cpu cpu1}, ${cpu cpu2}, ${cpu cpu3}, ${cpu cpu4}] | RAM $memperc | ${time %b} ${time %d} ${time %Y} | ${time %T} | Battery ${battery_percent BAT0}
+CPU [${cpu cpu1}, ${cpu cpu2}, ${cpu cpu3}, ${cpu cpu4}] | \
+RAM $memperc | \
+UP ${upspeedf wlp3s0} KiB | \
+DN ${downspeedf wlp3s0} KiB | \
+${time %b} ${time %d} ${time %Y} | \
+${time %T} | \
+Battery ${battery_percent BAT0}
 ]];
